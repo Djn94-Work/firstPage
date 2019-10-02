@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    background: slategray;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,76,129,1) 4%, rgba(98,95,153,1) 7%, rgba(111,111,138,1) 24%, rgba(96,125,154,1) 44%, rgba(39,113,145,1) 74%, rgba(15,102,120,1) 97%, rgba(19,92,107,1) 100%);
     margin: 0;
     padding: 0;
     width:100%;
