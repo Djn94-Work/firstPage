@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -75,6 +74,7 @@ h4 {
 }
 ul {
   margin-left: 50vh;
+  position: relative;
 }
 li span {
   position: relative;
@@ -160,4 +160,63 @@ li span {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+@media only screen and (max-width: 857px) {
+  #list {
+    margin-left: 5px;
+  }
+  li span {
+    padding: 2px;
+  }
+  #dogPic {
+    float: none;
+      position: static;
+  }
+}
+@media only screen and (min-width: 858px) {
+  #list {
+    margin-left: 5px;
+  }
+  li span {
+    padding: 2px;
+  }
+  #dogPic {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 1244px) {
+  #list {
+    margin-left: 5px;
+  }
+  li span {
+    padding: 2px;
+    margin-left: 25vh;
+  }
+  #dogPic {
+    left: 15%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #dogPic {
+    float: left;
+    position: relative;
+    left: 10%;
+    border: solid black 2px;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 1245px) {
+  #list {
+    margin-left: 50vh;
+  }
+  li span {
+    padding: 2px;
+  }
+  #dogPic {
+    float: left;
+    position: relative;
+    left: 20%;
+    border: solid black 2px;
+    border-radius: 50%;
+  }
 }
