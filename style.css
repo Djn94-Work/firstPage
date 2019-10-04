@@ -167,10 +167,11 @@ li span {
   }
   li span {
     padding: 2px;
+    left: 0;
   }
   #dogPic {
     float: none;
-      position: static;
+    position: static;
   }
 }
 @media only screen and (min-width: 858px) {
@@ -190,7 +191,6 @@ li span {
   }
   li span {
     padding: 2px;
-    margin-left: 25vh;
   }
   #dogPic {
     left: 15%;
@@ -200,7 +200,6 @@ li span {
   #dogPic {
     float: left;
     position: relative;
-    left: 10%;
     border: solid black 2px;
     border-radius: 50%;
   }
