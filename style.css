@@ -44,6 +44,12 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+p {
+  font-size: 22px;
+}
+h4 {
+  font-size: 26px;
+}
 #list {
   text-align: center;
   padding-right: -5vh;
@@ -79,7 +85,14 @@ li span {
 #gh {
   margin-left: 10px;
   margin-right: 10px;
+  transition: 1s;
 }
+#fb:hover,
+#li:hover,
+#gh:hover {
+  background-color: black;
+}
+
 .tooltip {
   position: relative;
   z-index: 20;
@@ -102,4 +115,49 @@ li span {
   position: absolute;
   margin-left: 38vh;
   margin-top: 22vh;
+}
+#contact {
+  background: rgba(111, 111, 138, 1) 24%;
+  border: black solid 1px;
+  border-radius: 8px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  /* overflow: auto; */
+  background-color: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(80, 76, 129, 1) 4%,
+    rgba(98, 95, 153, 1) 7%,
+    rgba(111, 111, 138, 1) 24%,
+    rgba(96, 125, 154, 1) 44%,
+    rgba(39, 113, 145, 1) 74%,
+    rgba(15, 102, 120, 1) 97%,
+    rgba(19, 92, 107, 1) 100%
+  );
+}
+.modal-content {
+  /* background-color: rgba(80, 76, 129, 1) 4%; */
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 45%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
